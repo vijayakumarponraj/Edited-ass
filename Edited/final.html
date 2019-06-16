@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="Author" content="vijay">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+ <link rel="stylesheet" href="bootstrap.css" type="text/css">
+ <link rel="stylesheet" href="style2.css" type="text/css">
+ <link rel="stylesheet" href="main.css" type="text/css">
+ <link rel="stylesheet" href="footer.css" type="text/css">
+  <title>My Shop</title>
+  <script src="jscript/mainpage.js" async></script>
+  <header class="navbar navbar-inverse navbar-fixed-top" style="background-color:#87ceeb">
+  <div class="container">
+        <a class="navbar-brand" href="#" style="cursor: pointer"> My Shop </a>
+		<ul class="nav navbar-header">
+      <li class="active"><a href="homepage.html">&nbsp Home</a></li>
+      <li><a href="login.html#"> &nbsp Login</a></li>
+      <li><a href="signin.html">&nbsp Sign up</a></li>
+     <li><a href="homepage.html">&nbsp Shop</a></li>
+    </ul>
+	</div>
+    </header>
+<body background="img/bgrds.jpg">
+<div class="container" >
+<div class="jumbotron" style="margin-top:-50px ">	
+</div>
+</div>
+</head>
+<form type="POST" action="end.html" form id="end">
+   <div class="content_wrapper">
+ <div id="payment_box">
+<h3 style="text-align: center">Payment Processing Page</h3>
+                    <center>
+                        <br>
+                        <fieldset class="form-group row">
+                            <h3>Fill Your Details</h3>
+									<div class="col-xs-8">
+                                    <label for="name_field"> Name</label>
+                                    <input class="form-control text-center" id="name_field" placeholder="Ex: vijay" type="text"/>
+                                    <br>
+                                    <label for="contact_info">E- Mail ID</label>
+                                    <input class="form-control text-center" id="contact_info" placeholder="Ex: xyz@example.com" type="email" />
+                                    <br>
+									<label for="address_info">Address</label>
+                                    <input class="form-control text-center" id="address_info" placeholder=" Ex: north street " type="address" />
+									<label for="place_info">Place</label>
+                                    <input class="form-control text-center" id="place_info" placeholder=" Ex: Kovilpatti " type="address" />
+									<label for="pinode_info">Pincode</label>
+                                    <input class="form-control text-center" id="pincode_info" placeholder=" Ex: 628501 " type="address" />
+                                    <br>
+                                    <label for="card_info"> Card Number </label>
+                                    <input class="form-control text-center" id="card_info" placeholder=" 1234 1234 1234 1234" type="text" maxlength="16"/>
+                            </div>
+                        </fieldset>
+                        <br>
+						  <button onclick="passValue()">Submit</button>
+               
+                    </center>
+                </div>
+ <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">My Shop</h5>
+                <p class="grey-text text-lighten-4">You can Purchase a Products at 24 X 7 .</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Products</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="redmi.html">Mobiles</a></li>
+                  <li><a class="grey-text text-lighten-3" href="tshirt.html">T-shirts</a></li>
+                  <li><a class="grey-text text-lighten-3" href="laptop.html">Laptops</a></li>
+                  <li><a class="grey-text text-lighten-3" href="pendrive.html">Pendrives</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="www.ckrmart.com">My Shop</a>
+  </div>
+  </div>
+  </div>
+</footer>
+    </body>
+	<script>
+	function passValue(){
+	var name=document.getElementById("name_field").value;
+	localStorage.setItem("textvalues",name);
+	
+	var email=document.getElementById("contact_info").value;
+	localStorage.setItem("textvalues2",email);
+	//return false;
+	
+	var email=document.getElementById("address_info").value;
+	localStorage.setItem("textvalues3",email);
+	//return false;
+	
+	var email=document.getElementById("place_info").value;
+	localStorage.setItem("textvalues4",email);
+	//return false;
+	
+	var email=document.getElementById("pincode_info").value;
+	localStorage.setItem("textvalues5",email);
+	//return false;
+	
+	var email=document.getElementById("card_info").value;
+	localStorage.setItem("textvalues6",email);
+	return false;
+	}
+	</script>
+	  <script type="text/javascript" src="jscript/jquery.js"></script>
+   <script type="text/javascript" src="jscript/bootstrap.js"></script>
+   <script type="text/javascript" src="jscript/mainpage.js"></script>
+   <script type="text/javascript" src="jscript/store.js"></script>
+   <script type="text/javascript" src="jscript/final.js"></script>
+</html>
